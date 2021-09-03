@@ -1,0 +1,52 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="header-wrapper">
+        <div class="features-header">
+            <h1>Build a Test</h1>
+            <h2>Use this form to build a <strong>free</strong> test on Testmoz.</h2>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content section">
+            <div class="build flex-fix">
+                <form action="" method="post" id="start-form">
+                    <p>(If you paid for a membership, you should <a href="/account/login/">sign in</a> first)</p>
+                    <input type="hidden" name="csrfmiddlewaretoken"
+                        value="y8hXZjdnEmAEeZmJ1dvHJA03jTpYOBzb6910w8WcNk2qnSTv33x7JiAitANAhasR">
+
+                    <div class="form-row">
+                        <label>Test name (ex: Chapter 8 Test)</label>
+                        <input type="text" name="name" autofocus="true" required id="id_name">
+
+                    </div>
+                    <div class="form-row-split">
+                        <div class="form-row">
+                            <label>Choose a password</label>
+                            <input type="password" name="password" required id="id_password">
+                        </div>
+                        <div class="form-row">
+                            <label>Retype your password</label>
+                            <input type="password" name="confirm_password" required id="id_confirm_password">
+                        </div>
+                    </div>
+                    <div style="text-align:center">
+                        <button><a href="/create_test"> Create Test</a></button>
+                    </div>
+                </form>
+                <div>
+                    <h4>Limitations</h4>
+                    <p>You can build a test for free on Testmoz, but remember these limits: <a href="/faqs#limits">50
+                            questions per test / 100 responses per test</a>. Tests are <a href="/faqs#limits">deleted
+                            after 2 years of inactivity</a>.</p>
+                    <p>You can <strong><a href="/account/register">sign up</a></strong> for a Testmoz account to remove
+                        these limitations.</p>
+                    <h4>Warning:</h4>
+                    <ol>
+                        <li>Don't forget your password (you can't recover it!)</li>
+                        <li>Don't forget your test URL (you'll see it on the next page)</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>

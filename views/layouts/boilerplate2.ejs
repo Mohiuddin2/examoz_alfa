@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Testmoz - Powerful but Simple Test Generator</title>
+    <meta name="description"
+        content="Build automatically graded tests. Distribute online, or print. Analyze and export results. Great tool for teachers, trainers and employers." />
+    <meta name="ROBOTS" content="NOODP" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/reboot.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/sidebar.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+
+    <script>
+        try {
+            createCookie("timezone", Intl.DateTimeFormat().resolvedOptions().timeZone, 100);
+        } catch (e) {
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-6553843-8']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <div id="body">
+        <%- include('../partials/sidebar') %>
+            <%- body %>
+                <div id="menu-button">
+                    Menu
+                </div>
+
+
+</body>
+
+</html>
